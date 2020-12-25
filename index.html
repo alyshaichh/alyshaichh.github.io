@@ -3,15 +3,18 @@
 
 <head>
     <title>Triple A Homestay</title>
+    <!-- <meta name=”viewport” content=”width=device-width, initial-scale=1”> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="triple a homestay logo.png" />
+    <link rel="icon" href="logo 2.jpeg" />
     </div>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+
     <style>
         body {
             background-color: black;
@@ -30,7 +33,7 @@
         }
 
         h2 {
-            color: #e2d3cd;
+            color: whitesmoke;
             margin-top: 40px;
             font-size: 45px;
             text-align: center;
@@ -38,7 +41,7 @@
         }
 
         p {
-            color: #eff8ff;
+            color: white;
             margin-top: 40px;
             font-size: 24px;
             text-align: center;
@@ -46,7 +49,7 @@
         }
 
         ol {
-            color: wheat;
+            color: white;
             margin-top: 40px;
             font-size: 19px;
             text-align: left;
@@ -61,21 +64,37 @@
             display: flex;
             justify-content: center;
             border: 3px dotted burlywood;
-            margin-top: 5%;
+            margin-top: 5px;
             padding: 25px;
+        }
+
+        .rectangle {
+            width: 20% height 20%;
+            background-color: burlywoods;
+        }
+
+        @media screen and (min-width: 600px) {
+            */ h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            */ h1 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 
-
 <body>
-    <i class="fas fa-concierge-bell"></i>
+
 
     <h1 style="color:chocolate" ;>
         <h1>TRIPLE A HOMESTAY</h1>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="Exercise 2 yang ke 2.html">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="room and book triple a.html">Room</a>
@@ -83,6 +102,26 @@
             <li class="nav-item">
                 <a class="nav-link" href="Location.html">Location</a>
             </li>
+            <br><br>
+
+            <body id="page">
+                <button onclick="nightMode()">Night Mode</button>
+                <button onclick="dayMode()">Day Mode</button>
+                <script>
+                    function nightMode() {
+                        var bgColor = 'black'
+                        var txtColor = 'white';
+                        document.getElementById("page").style.backgroundColor = bgColor;
+                        document.getElementById("page").style.color = txtColor;
+
+                    }
+                    function dayMode() {
+                        var bgColor = 'white'
+                        var txtColor = 'black'
+                        document.getElementById("page").style.backgroundColor = bgColor;
+                        document.getElementById("page").style.color = txtColor;
+                    }
+                </script>
         </ul>
         <div class="text-center">
             <img src="triple a.JPG" height="400">
