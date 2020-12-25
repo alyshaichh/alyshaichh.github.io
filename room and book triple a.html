@@ -28,7 +28,7 @@
         }
 
         h2 {
-            color: #e2d3cd;
+            color: #c8a2c8;
             margin-top: 40px;
             font-size: 45px;
             text-align: center;
@@ -36,15 +36,15 @@
         }
 
         p {
-            color: #eff8ff;
+            color: #c8a2c8;
             margin-top: 40px;
-            font-size: 19px;
+            font-size: 24px;
             text-align: center;
             font-family: 'Crimson Text', serif;
         }
 
         ol {
-            color: wheat;
+            color: #c8a2c8;
             margin-top: 40px;
             font-size: 19px;
             text-align: left;
@@ -52,7 +52,7 @@
         }
 
         .nav-link {
-            color: white
+            color: #c8a2c8
         }
 
         #box {
@@ -80,6 +80,28 @@
                 <a class="nav-link" href="Location.html">Location</a>
             </li>
         </ul>
+        <div class="text-center">
+
+            <body id="page">
+                <button onclick="nightMode()">Night Mode</button>
+                <button onclick="dayMode()">Day Mode</button>
+                <script>
+                    function nightMode() {
+                        var bgColor = 'black'
+                        var txtColor = 'white';
+                        document.getElementById("page").style.backgroundColor = bgColor;
+                        document.getElementById("page").style.color = txtColor;
+
+                    }
+                    function dayMode() {
+                        var bgColor = 'white'
+                        var txtColor = 'black'
+                        document.getElementById("page").style.backgroundColor = bgColor;
+                        document.getElementById("page").style.color = txtColor;
+                    }
+                </script>
+        </div>
+
         <h2>TRIPLE A HOMESTAY 1</h2>
 
         <ol>
